@@ -10,7 +10,7 @@ const joinDate = document.getElementById('joined');
 const repos = document.getElementById('repos');
 const followers = document.getElementById('followers');
 const following = document.getElementById('following');
-let img = document.createElement('img');
+let img = document.createElement("img");
 let avatar = document.querySelector('.git-img')
 
 
@@ -25,6 +25,9 @@ searchBtn.addEventListener('click', function(event) {
         img.src = data.avatar_url;
         avatar.appendChild(img);
         avatar.style.border = 'none';
+
+        
+        console.log(img.src)
 
         console.log(data);
 
