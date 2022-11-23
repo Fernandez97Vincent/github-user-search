@@ -8,17 +8,37 @@ body {
     background-color: rgb(202, 202, 202);
 }
 
+
 .main-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 700px;
-    background-color: white;
+    background-color: rgb(202, 202, 202);
+    margin-bottom: 2rem;
 }
 
 .search-container {
     display: flex;
-    
+    justify-content: space-between;
+    background-color: white;
+    width: 700px;
+    margin-bottom: 2rem;
+    border-radius: 15px;
+    padding: .5rem 1rem;
+}
+
+.searchBtn {
+    display: flex;
+    align-items: center;
+}
+
+.searchBtn button {
+    border: none;
+    height: 2rem;
+    background-color: blue;
+    color: white;
+    width: 4rem;
 }
 
 #search-input {
@@ -47,6 +67,9 @@ body {
 }
 
 .git-results { 
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: .5rem 1rem;
     object-fit: contain;
     display: flex;
     justify-content: space-between;
@@ -54,10 +77,6 @@ body {
     width: 700px;
    
     background-color: white;
-}
-
-.searchBtn {
-    background-color: rgb(92, 173, 211);
 }
 
 
@@ -80,7 +99,9 @@ body {
 }
 
 .repo-results {
-
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: .5rem 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
