@@ -10,8 +10,8 @@ const joinDate = document.getElementById('joined');
 const repos = document.getElementById('repos');
 const followers = document.getElementById('followers');
 const following = document.getElementById('following');
-const img = document.createElement('img');
-const avatar = document.querySelector('img')
+let img = document.createElement('img');
+let avatar = document.querySelector('.git-img')
 
 
 searchBtn.addEventListener('click', function(event) {
@@ -20,14 +20,23 @@ searchBtn.addEventListener('click', function(event) {
     async function getUrl() {
         const response = await fetch(url);
         const data = await response.json();
+        const dateFormat = data.created_at.slice(0, data.created_at.length -10);
 
-        avatar.innerHTML = data.avatar_url;
+        img.src = data.avatar_url;
+        avatar.appendChild(img);
+        avatar.style.border = 'none';
 
         console.log(data);
 
         // inner HTML for data
         userName.innerHTML = data.name;
         userUrl.innerHTML = `@${data.login}`;
+        joinDate.innerHTML = `Joined ${dateFormat}`
+
+        // repos, followers, following
+        repos.innerHTML = data.public_repos;
+        followers.innerHTML = data.followers;
+        following.innerHTML = data.following;
     }
 
     getUrl();
