@@ -26,7 +26,7 @@ searchBtn.addEventListener('click', function(event) {
         avatar.appendChild(img);
         avatar.style.border = 'none';
 
-        
+
         console.log(img.src)
 
         console.log(data);

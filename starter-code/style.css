@@ -5,7 +5,7 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(202, 202, 202);
+    background-color: #1C282E;
 }
 
 
@@ -14,14 +14,15 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 700px;
-    background-color: rgb(202, 202, 202);
+    background-color: #1C282E;
     margin-bottom: 2rem;
+    color: white
 }
 
 .search-container {
     display: flex;
     justify-content: space-between;
-    background-color: white;
+    background-color: #273F4B;
     width: 700px;
     margin-bottom: 2rem;
     border-radius: 15px;
@@ -35,16 +36,22 @@ body {
 
 .searchBtn button {
     border: none;
-    height: 2rem;
+    border-radius: 10px;
+    height: 3rem;
     background-color: blue;
     color: white;
     width: 4rem;
+    
 }
+
 
 #search-input {
     width: 600px;
     height: 3rem;
     border: none;
+    outline: none;
+    padding-left: .3.5rem;
+    background-color: #273F4B;
 }
 .search-text {
     width: 100%;
@@ -75,8 +82,8 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 700px;
-   
-    background-color: white;
+    color: white;
+    background-color: #273F4B;
 }
 
 
@@ -85,7 +92,7 @@ body {
     height: 7rem;
     width: 7rem;
     border-radius: 50%;
-    border: solid 1px black;
+
     
 }
 
@@ -94,11 +101,11 @@ body {
     height: 7rem;
     width: 7rem;
     border-radius: 50%;
-    border: solid 1px black;
+    
     
 }
 
-.repo-results {
+.repo-results, .result-container {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     padding: .5rem 1rem;
@@ -106,7 +113,16 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 700px;
-    background-color: white;
+    background-color: #273F4B;
+    color: white;
+}
 
+.result-container {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #1C282E;
+    width: 400px;
+    margin: 0 auto;
+    
 }
 
